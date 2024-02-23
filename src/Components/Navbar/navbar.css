@@ -1,0 +1,32 @@
+.nav-ul {
+    background-color: #f0f0f0; /* Light gray background color */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* Other CSS properties */
+}
+.items a {
+    
+    text-decoration: none; /* Remove underline */
+    font-family: Arial, sans-serif; /* Choose a suitable font family */
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Make text bold */
+    color: #333; /* Dark gray text color */
+}
+.items a:hover {
+    color: #007bff; /* Change text color on hover */
+    /* Or change background color */
+    /* background-color: #007bff; */
+}
+.nav-ul {
+    padding: 10px 0; /* Add padding above and below the navigation bar */
+}
+.items {
+    list-style-type: none;
+    margin: 0 10px; /* Add margin between each navigation item */
+}
+@media (max-width: 768px) {
+    .nav-ul {
+        flex-direction: column; /* Change to a column layout on smaller screens */
+    }
+}
