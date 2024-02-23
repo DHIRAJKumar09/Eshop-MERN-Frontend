@@ -16,7 +16,7 @@ const Product=()=>{
         return false;
        }
         try{
-            let result = await fetch('http://localhost:5000/add',{
+            let result = await fetch('https://eshop-mern-backend.onrender.com/add',{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json",

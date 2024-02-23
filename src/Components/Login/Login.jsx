@@ -7,7 +7,7 @@ export const Login = () => {
   const navigate = useNavigate();
 
   const loginbtn=async()=>{
-    let result = await fetch('http://localhost:5000/login',{
+    let result = await fetch('https://eshop-mern-backend.onrender.com/login',{
       method:"POST",
       headers:{
         'Content-Type':'application/json',

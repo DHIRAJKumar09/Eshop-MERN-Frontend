@@ -20,7 +20,7 @@ const Signup=()=>{
         console.log(name, email, password); // Assuming name, email, and password are defined somewhere
     
         try {
-            let result = await fetch('http://localhost:5000/register', {
+            let result = await fetch('https://eshop-mern-backend.onrender.com/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

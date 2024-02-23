@@ -16,7 +16,7 @@ export const Updatecomponent = () => {
 
     const getProductDetails=async()=>{
         console.warn(name,price,category,company);
-        let result = await fetch(`http://localhost:5000/product/${params.id}`,{
+        let result = await fetch(`https://eshop-mern-backend.onrender.com/product/${params.id}`,{
             method:"GET",
             headers:{
               authorization:`bearer ${JSON.parse(localStorage.getItem('token'))}`
@@ -30,7 +30,7 @@ export const Updatecomponent = () => {
       
     }
     const updateProductDetails=async()=>{
-      let result = await fetch(`http://localhost:5000/product/${params.id}`,{
+      let result = await fetch(`https://eshop-mern-backend.onrender.com/product/${params.id}`,{
         method:"PUT",
         headers:{
             'Content-Type':'application/json',

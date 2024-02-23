@@ -9,7 +9,7 @@ export const Productlist = () => {
     },[]);
 
     const getproduct = async()=>{
-        let result = await fetch('http://localhost:5000/productslist',{
+        let result = await fetch('https://eshop-mern-backend.onrender.com/productslist',{
             headers:{
                 authorization:`bearer ${JSON.parse(localStorage.getItem('token'))}`
             }
@@ -20,7 +20,7 @@ export const Productlist = () => {
    
     
     const deletebtn=async(id)=>{
-        let result = await fetch(`http://localhost:5000/product/${id}`,{
+        let result = await fetch(`https://eshop-mern-backend.onrender.com/product/${id}`,{
             method:"DELETE",
             headers:{
                 authorization:`bearer ${JSON.parse(localStorage.getItem('token'))}`
@@ -34,7 +34,7 @@ export const Productlist = () => {
     }
     const searchandle=async(event)=>{
         let key = event.target.value;
-        let result = await fetch(`http://localhost:5000/search/${key}`,{
+        let result = await fetch(`https://eshop-mern-backend.onrender.com/search/${key}`,{
             headers:{
                 authorization:`bearer ${JSON.parse(localStorage.getItem('token'))}`
             }
